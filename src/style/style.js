@@ -1,5 +1,6 @@
 // Common
 import "../common/nav.scss";
+import "../common/footer.scss"
 
 // Pages
 import "../pages/about.scss";

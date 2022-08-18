@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import google_map from "../assets/GPS/google-map.png";
 import neshan from "../assets/GPS/neshan.png";
 import waze from "../assets/GPS/waze.png";
+import Footer from "../common/Footer";
 
 const Contact = () => {
   useEffect(() => {
@@ -14,12 +15,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="contact-container">
-      <div
-        data-aos-delay="500"
-        data-aos-offset="-1500"
-        data-aos="fade-right"
-        className="contact-title"
-      >
+      <div className="contact-title">
         <p>تماس با ما</p>
         <h1>آتلیه عکاسی</h1>
       </div>
@@ -89,6 +85,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

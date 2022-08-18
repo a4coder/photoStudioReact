@@ -32,6 +32,7 @@ import sport4 from "../assets/gallery/Sport/4.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../common/Footer";
 
 const Works = () => {
   useEffect(() => {
@@ -39,12 +40,7 @@ const Works = () => {
   }, []);
   return (
     <div className="works-container">
-      <div
-        data-aos-delay="500"
-        data-aos-offset="-1500"
-        data-aos="fade-right"
-        className="works-title"
-      >
+      <div className="works-title">
         <p>نمونه کار</p>
         <h1>گالری</h1>
       </div>
@@ -122,6 +118,7 @@ const Works = () => {
           <img src={sport4} alt="photo" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

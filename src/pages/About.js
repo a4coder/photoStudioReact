@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // services
 import aboutSRV from "../assets/gallery/Jewel/1.jpg";
+import Footer from "../common/Footer";
 
 const About = () => {
   useEffect(() => {
@@ -11,12 +12,7 @@ const About = () => {
   }, []);
   return (
     <div className="about-container">
-      <div
-        data-aos-delay="500"
-        data-aos-offset="-1500"
-        data-aos="fade-right"
-        className="about-title"
-      >
+      <div className="about-title">
         <p>درباره ما</p>
         <h1>آتلیه عکاسی</h1>
       </div>
@@ -52,6 +48,7 @@ const About = () => {
           <img src={aboutSRV} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

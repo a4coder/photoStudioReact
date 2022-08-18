@@ -1,10 +1,9 @@
 .contact-container {
     overflow-y: scroll;
-    height: 100vh;
     width: calc(100% - 150px);
-    min-height: 500px;
+    height: 100vh;
     margin-right: 150px;
-    padding:0 20px;
+
     .contact-title {
             margin: auto;
             margin-top: 32px;
@@ -72,6 +71,8 @@
             
     }
     .contact-wrapper {
+        margin-bottom: 50px;
+        padding:0 20px;
         font-size: 1.5rem;
         font-weight: 300;
         color: #252525;
@@ -205,7 +206,6 @@
 @media (max-width: 1000px) {
     .contact-container {
         margin-right: 150px;
-        padding:0 20px;
         .contact-title {
                 margin-top: 32px;
                 h1 {

@@ -13,6 +13,7 @@ import Sport from "../assets/gallery/Sport/Sport.jpg";
 import Fashion from "../assets/gallery/Fashion/Fashion.jpg";
 import Nature from "../assets/gallery/Nature/Nature.jpg";
 import Jewel from "../assets/gallery/Jewel/Jewel.jpg";
+import Footer from "../common/Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -20,12 +21,7 @@ const Home = () => {
   }, []);
   return (
     <div className="home-container">
-      <div
-        data-aos-delay="500"
-        data-aos-offset="-1500"
-        data-aos="fade-right"
-        className="wellcome"
-      >
+      <div className="wellcome">
         <p>یک تیم حرفه ای</p>
         <h1>آتلیه عکاسی</h1>
       </div>
@@ -37,6 +33,7 @@ const Home = () => {
         <Service_box delay="2500" service_name="عکاسی طبیعت" image={Nature} />
         <Service_box delay="3000" service_name="عکاسی صنعتی" image={Jewel} />
       </div>
+      <Footer />
     </div>
   );
 };
