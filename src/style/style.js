@@ -8,3 +8,4 @@ import "../pages/home.scss";
 import "../pages/contact.scss";
 
 //Components
+import "../components/service.scss"

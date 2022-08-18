@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Redirect } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 // componets
 import Nav from "./common/Nav";
 import Home from "./pages/Home";
@@ -16,8 +16,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Works />} />
-          {/* <Route path="/*" element={<Redirect/>}/> */}
+          <Route path="/works" element={<Works />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </div>

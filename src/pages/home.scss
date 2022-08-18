@@ -1,0 +1,111 @@
+.home-container {
+    overflow-y: scroll;
+    width: calc(100% - 150px);
+    height: 100vh;
+    min-height: 500px;
+    margin-right: 150px;
+    .wellcome {
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        text-align: center;
+        overflow: hidden;
+        padding: 10px;
+        width: 270px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-top: 1px solid #307CAE;
+            border-left: 1px solid #307CAE;
+            background-color: transparent;
+            width: 35px;
+            height: 35px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top: 1px solid #307CAE;
+            border-right: 1px solid #307CAE;
+            background-color: transparent;
+            width: 35px;
+            height: 35px;
+        }
+        h1 {
+            color: #307CAE;
+            font-size: 2.5rem;
+            font-weight: 400;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom: 1px solid #307CAE;
+                border-left: 1px solid #307CAE;
+                background-color: transparent;
+                width: 35px;
+                height: 35px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                border-bottom: 1px solid #307CAE;
+                border-right: 1px solid #307CAE;
+                background-color: transparent;
+                width: 35px;
+                height: 35px;
+            }
+        }
+        p {
+            margin-top: 20px;
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+        
+    }
+    .services-container {
+        display: flex;
+        align-items: center;
+        justify-content:start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        overflow-y:inherit;
+        width: 100%;
+        height: 100vh;
+        margin-right: 0;
+        margin-top: 120px;
+        .wellcome {
+            margin-top: 152px;
+            h1 {
+                color: #307CAE;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+            p {
+                margin-top: 20px;
+                color: #000;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            
+        }
+        .services-container {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            flex-wrap: wrap;
+        }
+    }
+}
